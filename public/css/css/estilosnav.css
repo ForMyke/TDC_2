@@ -1,0 +1,91 @@
+body {
+	background: #FAFBFD;
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* --- --- BARRA LATERAL --- --- */
+
+
+.barra-lateral {
+    margin: 0px;
+    padding: 0px;
+	background: #262a34;
+	color: #f0f0f0;
+	min-width: 300px;
+	min-height: 100vh;
+}
+
+.barra-lateral a {
+	color: black;
+    background: #f0f0f0;
+
+    
+}
+
+.barra-lateral a:hover {
+    transform: scale(1.05);
+}
+
+/* --- LOGO --- */
+.barra-lateral .logo {
+	width: 10px;
+	
+    
+}
+
+.barra-lateral .logo img {
+    display: block;
+    width: 10px;
+	
+}
+
+.barra-lateral .photo-logo{
+    width: 230px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.barra-lateral .logo-imagen{
+    text-align: center;
+}
+
+.barra-lateral .logo p {
+	font-size: 30px;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	font-weight: 300;
+
+}
+
+/* --- MENU --- */
+.barra-lateral .menu a {
+	display: block;
+	padding: 20px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	border-bottom: 1px solid rgba(255,255,255, .1);
+}
+
+.barra-lateral .menu a:hover {
+	background: #fff;
+}
+
+.barra-lateral .menu a svg {
+	margin-right: 10px;
+}
+
+/* --- --- MAIN --- --- */
+.main {
+	padding-top: 40px;
+    
+}
+
+
+
+/* Dispositivo xxl */
+@media screen and (max-width: 1400px) {}

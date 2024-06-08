@@ -1,0 +1,55 @@
+.boxe img{
+    margin-top:0px;
+    margin-bottom: 20px;
+    max-width: 120px;
+    max-height: 80%;
+}
+
+.imagen-ri {
+    float: right;
+    margin-right: 20px; /* Agrega un margen a la izquierda para separar la imagen del texto */
+}
+/* Estilos CSS */
+.boxe.accordion-body {
+    position: relative; /* Añadir posición relativa al contenedor principal */
+    text-align: center; /* Alinear el contenido al centro */
+}
+
+.images-container {
+    display: inline-block; /* Cambiar a un flujo en línea para colocar imágenes en una fila */
+}
+
+.image-with-text {
+    position: relative; /* Añadir posición relativa a cada div de imagen con texto */
+    display: inline-block; /* Colocar las imágenes y texto en una fila */
+}
+
+.imagen-extra {
+    width: 100px;
+    margin: 0 10px; /* Agregar un margen horizontal entre las imágenes con texto */
+}
+
+.image-with-text p {
+    position: absolute;
+    bottom: -20px; /* Ajustar el valor negativo para mover el texto hacia abajo */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translateX(-50%); /* Alinear el texto exactamente debajo de la imagen */
+}
+
+.boxe.accordion-body h6 {
+    text-align: left;
+    margin-left: 0; /* Eliminar los márgenes */
+    padding: 0; /* Eliminar el relleno */
+}
+.boton:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  
+  .boton{
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: 5px;
+  }

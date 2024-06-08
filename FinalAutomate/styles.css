@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #000000;
+  font-weight: bold;
+  color: #000;
+  overflow: auto; /* Mostrar la barra de desplazamiento */
+}
+
+h1 {
+  font-size: 60px;
+  text-align: start;
+  margin-top: 20px;
+}
+h2 {
+  font-size: 40px;
+  margin-top: 20px;
+}
+p {
+  font-size: 20px;
+}
+
+.node {
+  fill: #84b6f4; /* Color azul */
+  stroke: #4d3adf;
+  stroke-width: 2px;
+  cursor: move;
+  stroke-opacity: 0.5;
+}
+
+@keyframes animateDash {
+  to {
+    stroke-dashoffset: -1; /* Ajusta el valor según el tamaño de tu línea */
+  }
+}
+
+.link {
+  stroke: #ffffff; /* Color rojo */
+  stroke-width: 3px;
+  stroke-opacity: 0.7;
+  stroke-dasharray: 5, 5;
+  stroke-linecap: round;
+  animation: animateDash 0.7s linear infinite; /* Aplica la animación infinita */
+}
+
+.link-label {
+  font-size: 20px;
+  fill: #ffffff; /* Color del texto */
+}
+
+#container {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+div {
+  padding: 0px;
+}
+
+label {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #121414;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.grafico {
+  margin-top: 1000px;
+}
+
+button {
+  display: inline-block;
+  background-color: #1d1d1d;
+  color: #ffffff;
+  padding: 5px 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 17px;
+  border: none;
+}
+.btn {
+  color: yellow;
+}
+
+/* Estilo para la barra de desplazamiento en navegadores WebKit */
+*::-webkit-scrollbar {
+  width: 10px; /* Ancho de la barra de desplazamiento */
+}
+
+/* Estilo para el riel de la barra de desplazamiento */
+*::-webkit-scrollbar-track {
+  background: #121212; /* Color de fondo del riel */
+}
+
+/* Estilo para el pulgar de la barra de desplazamiento */
+*::-webkit-scrollbar-thumb {
+  background: #555; /* Color del pulgar */
+  border-radius: 5px; /* Radio de borde del pulgar */
+}
+
+/* Estilo para el pulgar de la barra de desplazamiento cuando se está desplazando */
+*::-webkit-scrollbar-thumb:hover {
+  background: #ffffff; /* Color del pulgar al pasar el ratón sobre él */
+}

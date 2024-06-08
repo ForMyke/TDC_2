@@ -1,0 +1,22 @@
+:root {
+    --width: 300px;
+    --padding: 10px;
+    --bgcolor: rgb(52, 52, 52);
+    --hovercolor: rgb(23, 23, 23);
+    --width-collapsed: 50px;
+  }
+  
+  @media (max-width: 768px) {
+    :root {
+      --width: 200px;
+      --padding: 5px;
+      --width-collapsed: 30px;
+    }
+  }
+  .asignaturas{
+    margin-left:200px ;
+    text-align: center;
+  }
+  .asignaturas h1{
+    font-size: 60px;
+  }

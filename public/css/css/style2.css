@@ -1,0 +1,72 @@
+/* Aquí pegas el código CSS */
+:root {
+  --width: 300px;
+  --padding: 10px;
+  --bgcolor: rgb(52, 52, 52);
+  --hovercolor: rgb(23, 23, 23);
+  --width-collapsed: 50px;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --width: 200px;
+    --padding: 5px;
+    --width-collapsed: 30px;
+  }
+}
+
+
+
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 15px;
+  background-color: #f0f0f0;
+  width: 350px;
+  height: 250px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.box img {
+  margin-top: 20px;
+  max-width: 150px;
+  max-height: 100%;
+}
+
+.box h5 {
+  margin-top: 30px;
+}
+
+.box:hover {
+  background-color: #fff  ;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin-left: 0;
+  }
+
+  .column {
+    align-items: center;
+  }
+
+  .box {
+    width: 90%;
+    max-width: 350px;
+    height: auto;
+    margin: 10px;
+  }
+}

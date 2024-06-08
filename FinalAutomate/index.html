@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Analizador Léxico</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./public/css/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <header>
+      <div class="bg-primary collapse" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-sm-8 py-4 text-white">
+              <h4>Acerca de</h4>
+              <p>
+                Programa desarrollado para la materia de Teoria de la
+                computación
+                <b>Aguilar Garcia Rafael</b>.
+                <br />
+              </p>
+              <b>Notas:</b>
+              <ul class="list-unstyled">
+                <li>
+                  <b>1.-</b> Con cualquier separador regresa a q0 a menos que
+                  esté especificada una transición diferente
+                </li>
+                <li>
+                  <b>2.-</b> Si se ingresa algun caracter no establecido en las
+                  transiciones de un estado a otro, el automata llegara a un
+                  estado muerto
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="navbar navbar-dark bg-primary mb-4">
+        <div class="container">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <img src="img/calculadora.png" alt="" />
+            <strong>Notas</strong>
+          </a>
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarHeader"
+            aria-controls="navbarHeader"
+            aria-expanded="false"
+            aria-label="Alternar Navegacion"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- Inicio de la animacion -->
+    <div class="container-fluid d-flex flex-column vh-100">
+      <div class="row flex-grow-1">
+        <div class="col-10">
+          <h1
+            class="animacion ml-5"
+            data-texto="AUTOMATAS FINITOS DETERMINISTAS"
+          >
+            Practica 2:
+          </h1>
+          <h2
+            class="integrantes ml-5 mb-5"
+            data-texto="Gomez Lopez Miguel Angel y Navarro Figueroa Linda"
+          >
+            Por:
+          </h2>
+          <h3 class="mt-5 ml-5 mb-5">Definicion Formal AFD:</h3>
+          <div class="col-8">
+            <input
+              type="file"
+              id="archivo"
+              class="form-control my-3 ml-4"
+              accept=".java"
+            />
+            <button
+              class="btn btn-primary btn-lg ml-4 mt-2 mb-5"
+              onclick="iniciarAnalisis()"
+            >
+              Analizar
+            </button>
+          </div>
+          <div id="resultados" class="mt-3"></div>
+        </div>
+      </div>
+
+      <!-- Area para el grafico 1-->
+      <div class="grafico row mt-5">
+        <div class="col-12 mt-5">
+          <div class="featured-list">
+            <h4 class="mt-5 text-center">Gráfico</h4>
+            <div id="graph">
+              <h1 class="text-center">AUTOMATA</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="./src/bootstrap.bundle.js"></script>
+    <script src="./public/bundle.js" defer></script>
+    <script src="./src/grafico.js"></script>
+    <script src="./src/grafico1.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
